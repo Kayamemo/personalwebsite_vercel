@@ -1,7 +1,7 @@
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+export const dynamic = 'force-dynamic'
 
 export async function POST(req: Request) {
   try {
@@ -10,6 +10,8 @@ export async function POST(req: Request) {
     if (!name || !email || !message) {
       return NextResponse.json({ error: 'Missing fields' }, { status: 400 })
     }
+
+    const resend = new Resend(process.env.RESEND_API_KEY)
 
     await resend.emails.send({
       from: 'Portfolio Contact <onboarding@resend.dev>',
