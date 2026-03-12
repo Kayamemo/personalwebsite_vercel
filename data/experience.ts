@@ -10,7 +10,7 @@ export const timelineItems: TimelineItem[] = [
     startDate: 'Sep 2025',
     endDate: 'Present',
     description:
-      'Currently studying Business Informatics (Wirtschaftsinformatik) in the 2nd semester, combining business management with information technology and software development.',
+      'Currently I am studying Business Informatics (Wirtschaftsinformatik) in the 2nd semester, combining business management with information technology and software development.',
     highlights: [
       'Currently in 2nd semester',
       'Focus on IT, business processes, and software development',
