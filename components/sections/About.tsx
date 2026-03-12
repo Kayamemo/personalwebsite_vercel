@@ -11,7 +11,7 @@ const highlights = [
     icon: Target,
     title: 'My Goal',
     description:
-      'To become a well-rounded software engineer who builds products that genuinely help people — with a strong focus on user experience and clean, maintainable code.',
+      'My goal is to become a well-rounded IT professional with strong technical and problem-solving skills. I want to continuously learn new technologies and build products that are useful for people. In the long term, I aim to develop the skills that allow me to work from anywhere in the world while building meaningful digital solutions.',
     color: 'text-accent',
     bg: 'bg-accent/10',
   },
@@ -19,7 +19,7 @@ const highlights = [
     icon: Lightbulb,
     title: 'My Passion',
     description:
-      'I love the intersection of technology and creativity. Whether it\'s designing a beautiful UI, solving an algorithmic challenge, or exploring the latest in AI — I\'m all in.',
+      'I\'m especially interested in the rapid development of artificial intelligence and how it can be combined with modern web technologies. I enjoy building things, experimenting with new tools, and understanding how technology can improve everyday life.',
     color: 'text-violet-500',
     bg: 'bg-violet-500/10',
   },
@@ -27,7 +27,7 @@ const highlights = [
     icon: Heart,
     title: 'What Drives Me',
     description:
-      'Curiosity, continuous learning, and the belief that technology can change lives. I wake up every day excited to build, learn, and grow.',
+      'What drives me is curiosity and continuous learning. Technology evolves quickly, and I enjoy the challenge of constantly improving my skills and discovering new possibilities. Building projects, solving problems, and turning ideas into real applications motivates me to keep growing every day.',
     color: 'text-rose-500',
     bg: 'bg-rose-500/10',
   },
