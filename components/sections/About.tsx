@@ -107,7 +107,7 @@ export function About() {
             <div className="space-y-5 text-foreground-muted leading-relaxed mb-10">
               <p>
                 Hey! I&apos;m <strong className="text-foreground font-semibold">Kaya Ercan</strong>, a
-                Business Informatics student at Hochschule Worms, currently living in Weinheim, Germany.
+                Business Informatics student at Hochschule Worms, currently living in Germany.
                 I&apos;m passionate about building modern websites and web applications, especially where
                 technology and artificial intelligence come together.
               </p>
