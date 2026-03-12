@@ -53,6 +53,7 @@ const initialForm: FormState = { name: '', email: '', message: '' }
 
 export function Contact() {
   const [form, setForm] = useState<FormState>(initialForm)
+  const [submitError, setSubmitError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
   const [errors, setErrors] = useState<Partial<FormState>>({})
@@ -75,11 +76,21 @@ export function Contact() {
     if (!validate()) return
 
     setLoading(true)
-    // Simulate network request — replace with real API call when ready
-    await new Promise((res) => setTimeout(res, 1200))
-    setLoading(false)
-    setSuccess(true)
-    setForm(initialForm)
+    setSubmitError(null)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (!res.ok) throw new Error('Failed to send')
+      setSuccess(true)
+      setForm(initialForm)
+    } catch {
+      setSubmitError('Something went wrong. Please try again or email me directly.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   const handleChange = (
@@ -239,6 +250,11 @@ export function Contact() {
                 >
                   {loading ? 'Sending…' : 'Send Message'}
                 </Button>
+                {submitError && (
+                  <p className="text-sm text-rose-500 text-center mt-3" role="alert">
+                    {submitError}
+                  </p>
+                )}
               </form>
             )}
           </motion.div>
