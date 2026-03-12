@@ -107,18 +107,22 @@ export function About() {
             <div className="space-y-5 text-foreground-muted leading-relaxed mb-10">
               <p>
                 Hey! I&apos;m <strong className="text-foreground font-semibold">Kaya Ercan</strong>, a
-                Computer Science student based in Amsterdam. I&apos;m passionate about building modern
-                web applications and exploring the rapidly evolving world of artificial intelligence.
+                Business Informatics student at Hochschule Worms, currently living in Weinheim, Germany.
+                I&apos;m passionate about building modern websites and web applications, especially where
+                technology and artificial intelligence come together.
               </p>
               <p>
-                My journey into tech started at 14 when I built my first website — and I&apos;ve been
-                hooked ever since. Today, I combine my studies with freelance web development and
-                personal projects that push my skills further every day.
+                My journey into tech started when I was 14 years old, when I built my first website.
+                After taking a break for a while, I recently returned to coding about six months ago,
+                and since then I&apos;ve been fully focused on learning and improving my skills again.
               </p>
               <p>
-                When I&apos;m not coding, you&apos;ll find me reading about startups, playing football,
-                or exploring new ideas. I believe that great software is a blend of solid engineering
-                and thoughtful design — and that&apos;s exactly what I strive for.
+                Today, I combine my studies in Business Informatics with web development in my free time,
+                working on personal projects and exploring new technologies in modern web development and AI.
+              </p>
+              <p>
+                Outside of tech, I enjoy healthiness and sports in general, and I like learning about
+                startups, innovation, and new ideas that could shape the future of technology.
               </p>
             </div>
 
